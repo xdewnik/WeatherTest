@@ -10,7 +10,8 @@ fun Weather.toUi() = MapContract.State.WeatherBottomSheet.WeatherInfo(
 )
 
 fun MapContract.State.WeatherBottomSheet.WeatherInfo.toModel() =
-    MapContract.State.WeatherBottomSheet.WeatherInfo(
+    Weather(
+        id = 0,
         location = this.location,
         temp = this.temp,
         weather = this.weather
