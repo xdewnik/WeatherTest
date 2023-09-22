@@ -44,7 +44,7 @@ fun MapScreen(viewModel: MapViewModel = getViewModel()) {
 
     MapScreen(
         state = state,
-        onEvent = viewModel::handleEvent
+        onEvent = viewModel::setEvent
     )
 }
 

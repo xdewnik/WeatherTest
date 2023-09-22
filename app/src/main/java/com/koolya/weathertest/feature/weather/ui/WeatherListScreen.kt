@@ -58,7 +58,7 @@ fun WeatherListScreen(
             }
         }
     }
-    WeatherListScreen(state = state, onEvent = viewModel::handleEvent)
+    WeatherListScreen(state = state, onEvent = viewModel::setEvent)
 }
 
 @Composable
