@@ -1,4 +1,4 @@
-package com.koolya.weathertest.ui.feature.map.ui.contract
+package com.koolya.weathertest.feature.map.ui.contract
 
 import com.google.android.gms.maps.model.LatLng
 import com.koolya.weathertest.core.ui.contract.UiEvent

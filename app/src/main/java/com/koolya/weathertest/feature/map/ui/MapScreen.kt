@@ -1,10 +1,11 @@
-package com.koolya.weathertest.ui.feature.map.ui
+package com.koolya.weathertest.feature.map.ui
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
@@ -30,7 +31,7 @@ import com.google.maps.android.compose.GoogleMap
 import com.google.maps.android.compose.Marker
 import com.google.maps.android.compose.MarkerState
 import com.koolya.weathertest.R
-import com.koolya.weathertest.ui.feature.map.ui.contract.MapContract
+import com.koolya.weathertest.feature.map.ui.contract.MapContract
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch
 import org.koin.androidx.compose.getViewModel
@@ -92,7 +93,7 @@ fun WeatherBottomSheet(
     state: MapContract.State.WeatherBottomSheet,
     onSaveClick: () -> Unit,
 ) {
-    Box {
+    Box(modifier = Modifier.fillMaxWidth(), contentAlignment = Alignment.Center) {
         when {
             state.isLoading -> CircularProgressIndicator(
                 modifier = Modifier
@@ -116,8 +117,15 @@ fun WeatherInfo(
     weatherInfo: MapContract.State.WeatherBottomSheet.WeatherInfo,
     onSaveClick: () -> Unit
 ) {
-    Column {
-        Row(modifier = Modifier.padding(16.dp)) {
+    Column(
+        modifier = Modifier
+            .fillMaxWidth()
+            .padding(bottom = 24.dp),
+        horizontalAlignment = Alignment.CenterHorizontally
+    ) {
+        Row(
+            modifier = Modifier.padding(16.dp),
+        ) {
             Text(text = weatherInfo.location)
 
             Spacer(modifier = Modifier.width(16.dp))

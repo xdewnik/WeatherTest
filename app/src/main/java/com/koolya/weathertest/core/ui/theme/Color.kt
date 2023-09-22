@@ -1,4 +1,4 @@
-package com.koolya.weathertest.ui.theme
+package com.koolya.weathertest.core.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

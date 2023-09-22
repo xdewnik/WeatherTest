@@ -7,8 +7,8 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
-import com.koolya.weathertest.ui.feature.map.ui.MapScreen
-import com.koolya.weathertest.ui.theme.WeatherTestTheme
+import com.koolya.weathertest.feature.map.ui.MapScreen
+import com.koolya.weathertest.core.ui.theme.WeatherTestTheme
 
 class MainActivity : ComponentActivity() {
 

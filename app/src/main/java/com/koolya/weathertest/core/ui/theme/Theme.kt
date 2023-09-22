@@ -1,4 +1,4 @@
-package com.koolya.weathertest.ui.theme
+package com.koolya.weathertest.core.ui.theme
 
 import android.app.Activity
 import android.os.Build
