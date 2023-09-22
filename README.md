@@ -6,6 +6,7 @@ Paste key into `local.properties` file, into `WEATHER_API_KEY` field
 You also need to get your google maps api key and register app in console.
 You can get instructions
 here: [google map platform](https://developers.google.com/maps/documentation/android-sdk/get-api-key)
+Paste api key into `local.properties` file, into `MAPS_API_KEY` field
 
 Run project, enjoy
 
