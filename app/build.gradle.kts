@@ -68,6 +68,8 @@ fun readProperties(propertiesFile: File) = Properties().apply {
 
 dependencies {
     val room_version = "2.5.2"
+    val nav_version = "2.7.1"
+
 
     implementation("androidx.core:core-ktx:1.12.0")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.2")
@@ -108,4 +110,8 @@ dependencies {
     //maps
     implementation("com.google.maps.android:maps-compose:2.14.1")
     implementation("com.google.android.gms:play-services-maps:18.1.0")
+
+    //navigation
+    implementation("androidx.navigation:navigation-compose:$nav_version")
+
 }
