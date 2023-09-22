@@ -7,7 +7,8 @@ import org.koin.dsl.module
 val MapUiModule = module {
     viewModel {
         MapViewModel(
-            getWeatherInfoUseCase = get()
+            getWeatherInfoUseCase = get(),
+            saveWeatherInfoUseCase = get(),
         )
     }
 }
